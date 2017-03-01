@@ -1,6 +1,6 @@
 # hanchor [![Build Status](https://travis-ci.org/rod/hanchor.svg?branch=master)](https://travis-ci.org/rod/hanchor)
 
-> Generate links to your header tags
+> Create links to your header tags
 
 
 ## Install
