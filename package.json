@@ -1,0 +1,43 @@
+{
+  "name": "hanchor",
+  "version": "0.1.0",
+  "description": "Generate links to your header tags",
+  "license": "MIT",
+  "repository": "rod/hanchor",
+  "author": {
+    "name": "Rodney Dennis",
+    "email": "rodneydennisjr@gmail.com",
+    "url": "rod.today"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava -v",
+    "build": "babel lib/index.js -o hanchor.js --presets=es2015,stage-0"
+  },
+  "main": "hanchor.js",
+  "keywords": [
+    "header",
+    "h",
+    "anchor",
+    "a",
+    "tag",
+    "link"
+  ],
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "xo": "^0.17.0"
+  },
+  "xo": {
+    "space": true,
+    "extends": "airbnb-base"
+  }
+}
