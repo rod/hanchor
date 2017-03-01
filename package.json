@@ -1,7 +1,7 @@
 {
   "name": "hanchor",
   "version": "0.1.0",
-  "description": "Generate links to your header tags",
+  "description": "Create links to your header tags",
   "license": "MIT",
   "repository": "rod/hanchor",
   "author": {
