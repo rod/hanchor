@@ -13,8 +13,8 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava -v",
-    "build": "babel lib/index.js -o hanchor.js --presets=es2015,stage-0"
+    "start": "babel --presets=es2015,stage-0 -w lib/index.js -o hanchor.js",
+    "test": "webpack lib/index.js test/test.bundle.js"
   },
   "main": "hanchor.js",
   "keywords": [
@@ -34,6 +34,7 @@
     "eslint": "^3.15.0",
     "eslint-config-airbnb-base": "^11.1.0",
     "eslint-plugin-import": "^2.2.0",
+    "webpack": "^2.2.1",
     "xo": "^0.17.0"
   },
   "xo": {
