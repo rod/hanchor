@@ -10,10 +10,11 @@
     "node": ">=4"
   },
   "scripts": {
+    "start": "babel src/hanchor.js -w -o hanchor.js",
     "build:expanded": "babel src/hanchor.js -o hanchor.js",
     "build:compressed": "babel src/hanchor.js -o hanchor.min.js --presets=babili",
     "build": "npm run build:expanded & npm run build:compressed",
-    "start": "babel src/hanchor.js -w -o hanchor.js"
+    "prepublish": "npm run build"
   },
   "babel": {
     "presets": [
@@ -26,7 +27,7 @@
       "stage-0"
     ]
   },
-  "main": "hanchor.js",
+  "main": "hanchor.min.js",
   "keywords": [
     "a",
     "anchor",
