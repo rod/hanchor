@@ -9,6 +9,18 @@
 $ npm install --save hanchor
 ```
 
+## Usage
+
+```html
+...
+  <script type="text/javascript" src="hanchor.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      hanchor('#element');
+    })();
+  </script>
+...
+```
 
 ## API
 
