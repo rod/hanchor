@@ -14,15 +14,18 @@ $ npm install --save hanchor
 ## Usage
 
 ```html
-...
+<html>
+  ...
   <script type="text/javascript" src="hanchor.min.js"></script>
   <script type="text/javascript">
     (function() {
-      hanchor('#element');
+      hanchor.init('article');
     })();
   </script>
-...
+  ...
+</html>
 ```
+
 
 ## API
 
