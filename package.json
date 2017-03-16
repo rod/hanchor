@@ -1,44 +1,61 @@
 {
   "name": "hanchor",
   "version": "0.1.1",
-  "description": "Create links to your header tags",
+  "description": "Autogenerate links to header tags from header text",
   "license": "MIT",
   "repository": "rod/hanchor",
-  "author": {
-    "name": "Rodney Dennis",
-    "email": "rodneydennisjr@gmail.com",
-    "url": "rod.today"
-  },
+  "homepage": "https://github.com/rod/hanchor",
+  "author": "Rodney Dennis <rodneydennisjr@gmail.com> (https://rod.today)",
   "engines": {
     "node": ">=4"
   },
   "scripts": {
-    "start": "babel --presets=es2015,stage-0 -w lib/index.js -o hanchor.js",
-    "test": "webpack lib/index.js test/test.bundle.js"
+    "build": "babel src/hanchor.js -o hanchor.js"
+  },
+  "babel": {
+    "presets": [
+      ["es2015", {"modules": "umd"}],
+      "stage-0"
+    ]
   },
   "main": "hanchor.js",
   "keywords": [
-    "header",
-    "h",
-    "anchor",
     "a",
+    "anchor",
+    "h",
+    "header",
+    "link",
+    "slug",
+    "slugify",
+    "string",
     "tag",
-    "link"
+    "unicode",
+    "url",
+    "utf-8",
+    "utf"
   ],
   "devDependencies": {
     "ava": "^0.17.0",
     "babel": "^6.23.0",
     "babel-cli": "^6.23.0",
+    "babel-core": "^6.24.0",
+    "babel-preset-env": "^1.2.2",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-stage-0": "^6.22.0",
     "eslint": "^3.15.0",
     "eslint-config-airbnb-base": "^11.1.0",
     "eslint-plugin-import": "^2.2.0",
-    "webpack": "^2.2.1",
     "xo": "^0.17.0"
   },
   "xo": {
+    "envs": [
+      "browser",
+      "node"
+    ],
     "space": true,
     "extends": "airbnb-base"
+  },
+  "dependencies": {
+    "babel-loader": "^6.4.0"
   }
 }

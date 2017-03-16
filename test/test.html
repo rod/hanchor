@@ -3,16 +3,19 @@
   <head>
   </head>
   <body>
-    <h1>Ouside Article</h1>
-    <article id="article">
-      <h1>Inside article</h1>
+    <h1>Body H1</h1>
+    <article id="post" data-post>
+      <h2>Article H2</h2>
+      <h3>Article H3</h3>
     </article>
     <script src="../hanchor.js"></script>
     <script>
-      hanchor({
-        element: document.querySelector('article'),
-        linkHTML: '<b>777</b>',
-      });
+      (function () {
+        hanchor.init('article', {
+          content: '@',
+          className: 'link',
+        });
+      }());
     </script>
   </body>
 </html>
