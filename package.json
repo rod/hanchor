@@ -10,7 +10,10 @@
     "node": ">=4"
   },
   "scripts": {
-    "build": "babel src/hanchor.js -o hanchor.js"
+    "build:expanded": "babel src/hanchor.js -o hanchor.js",
+    "build:compressed": "babel src/hanchor.js -o hanchor.min.js --presets=babili",
+    "build": "npm run build:expanded & npm run build:compressed",
+    "start": "babel src/hanchor.js -w -o hanchor.js"
   },
   "babel": {
     "presets": [
@@ -44,6 +47,7 @@
     "babel": "^6.23.0",
     "babel-cli": "^6.23.0",
     "babel-core": "^6.24.0",
+    "babel-preset-babili": "^0.0.12",
     "babel-preset-env": "^1.2.2",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-stage-0": "^6.22.0",
