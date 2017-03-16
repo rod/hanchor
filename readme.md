@@ -20,21 +20,19 @@ Type: `object`, `string`, Default: `'body'`
 
 The DOM element that header linking is scoped to.
 
-#### options
-
-##### content
+#### options.content
 
 Type: `string`, Default: `#`
 
 The content of the header tag link.
 
-##### className
+#### options.className
 
 Type: `string`, Default: `false`
 
 Class to be assigned to the header tag links.
 
-##### position
+#### options.position
 
 Type: `string`, Default: `beforeend`
 
