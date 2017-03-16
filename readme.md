@@ -1,4 +1,6 @@
-# hanchor [![Build Status](https://travis-ci.org/rod/hanchor.svg?branch=master)](https://travis-ci.org/rod/hanchor)
+# hanchor
+
+[![Build Status](https://travis-ci.org/rod/hanchor.svg?branch=master)](https://travis-ci.org/rod/hanchor)
 
 > Autogenerate links to header tags from header text
 
@@ -28,29 +30,29 @@ $ npm install --save hanchor
 
 #### scope
 
-Type: `object`, `string`, Default: `'body'`
+Type: `string`or `object`, Default: `'body'`
 
 The DOM element that header linking is scoped to.
 
 #### options.content
 
-Type: `string`, Default: `#`
+Type: `string`, Default: `'#'`
 
 The content of the header tag link.
 
 #### options.className
 
-Type: `string`, Default: `false`
+Type: `string` or `false`, Default: `false`
 
 Class to be assigned to the header tag links.
 
 #### options.position
 
-Type: `string`, Default: `beforeend`
+Type: `string`, Default: `'beforeend'`
 
-Position the link `beforebegin`, `afterbegin`, `beforeend` or `afterend` in reference to the the header tag.
+Position the link `'beforebegin'`, `'afterbegin'`, `'beforeend'` or `'afterend'` in reference to the the header tag.
 
 
 ## License
 
-MIT © [Rodney Dennis](http://rod.today)
+MIT © [Rodney Dennis](https://rod.today)
