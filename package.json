@@ -10,11 +10,10 @@
     "node": ">=4"
   },
   "scripts": {
-    "start": "babel src/hanchor.js -w -o hanchor.js",
-    "test": "xo",
-    "build:expanded": "babel src/hanchor.js -d dist/hanchor.js",
-    "build:compressed": "babel src/hanchor.js -d dist/hanchor.min.js --presets=babili",
-    "build": "npm run build:expanded & npm run build:compressed",
+    "start": "babel ./src/hanchor.js -w -o hanchor.js",
+    "build:expanded": "babel ./src -d ./dist/",
+    "build:compressed": "babel ./dist/hanchor.js -o ./dist/hanchor.min.js --presets=babili",
+    "build": "npm run build:expanded && npm run build:compressed",
     "prepublish": "npm run build"
   },
   "babel": {
@@ -29,9 +28,6 @@
     ]
   },
   "main": "dist/hanchor.min.js",
-  "files": [
-    "dist"
-  ],
   "keywords": [
     "a",
     "anchor",
