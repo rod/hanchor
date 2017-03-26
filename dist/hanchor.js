@@ -1,3 +1,11 @@
+/*!
+ * Hanchor v1.0.6
+ * https://github.com/rod/hanchor
+ *
+ * Copyright (c) 2017 Rodney Dennis
+ * Licensed under the MIT license
+ */
+
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
     define(['exports'], factory);
@@ -22,12 +30,6 @@
   } : function (obj) {
     return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
   };
-
-  //! hanchor
-  //! version : 2.0.0
-  //! authors : Rodney Dennis
-  //! license : MIT
-  //! https://github.com/rod/hanchor
 
   var formatScope = function formatScope(data) {
     var type = typeof data === 'undefined' ? 'undefined' : _typeof(data);
@@ -56,9 +58,8 @@
     .replace(/[^\w\-]+/g, '') // Remove all non-word chars
     .replace(/\-\-+/g, '-') // Replace multiple - with single -
     .replace(/^-+/, '') // Trim - from start of text
-    .replace(/-+$/, '') // Trim - from end of text
-    ;
-  };
+    .replace(/-+$/, '');
+  }; // Trim - from end of text
 
   var hanchor = function hanchor(scope) {
     var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
