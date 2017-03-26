@@ -13,10 +13,17 @@ $ npm install --save hanchor
 
 ## Usage
 
+The quickest way to begin using hanchor is to include it in the `<head>` of your HTML document.
+
+```html
+<head>
+  <script src="https://unpkg.com/hanchor@1.0.7" />
+</head>
+```
+
 ```html
 <html>
   ...
-  <script type="text/javascript" src="hanchor.min.js"></script>
   <script type="text/javascript">
     (function() {
       hanchor.init('article');
