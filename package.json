@@ -11,8 +11,9 @@
   },
   "scripts": {
     "start": "babel src/hanchor.js -w -o hanchor.js",
-    "build:expanded": "babel src/hanchor.js -o hanchor.js",
-    "build:compressed": "babel src/hanchor.js -o hanchor.min.js --presets=babili",
+    "test": "xo",
+    "build:expanded": "babel src/hanchor.js -d dist/hanchor.js",
+    "build:compressed": "babel src/hanchor.js -d dist/hanchor.min.js --presets=babili",
     "build": "npm run build:expanded & npm run build:compressed",
     "prepublish": "npm run build"
   },
@@ -27,7 +28,10 @@
       "stage-0"
     ]
   },
-  "main": "hanchor.min.js",
+  "main": "dist/hanchor.min.js",
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "a",
     "anchor",

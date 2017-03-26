@@ -5,7 +5,7 @@
 > Autogenerate links to header tags from header text
 
 
-## Install
+## Installation
 
 ```
 $ npm install --save hanchor
@@ -58,4 +58,4 @@ Position the link `'beforebegin'`, `'afterbegin'`, `'beforeend'` or `'afterend'`
 
 ## License
 
-MIT © [Rodney Dennis](https://rod.today)
+[MIT](/license) © Rodney Dennis
