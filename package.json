@@ -1,6 +1,6 @@
 {
   "name": "hanchor",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Autogenerate links to header tags from header text",
   "license": "MIT",
   "repository": "rod/hanchor",
