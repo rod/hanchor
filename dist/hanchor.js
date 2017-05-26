@@ -1,5 +1,5 @@
 /*!
- * Hanchor v1.0.6
+ * Hanchor v1.0.7
  * https://github.com/rod/hanchor
  *
  * Copyright (c) 2017 Rodney Dennis
