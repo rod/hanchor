@@ -1,6 +1,6 @@
 # hanchor
 
-[![Build Status](https://travis-ci.org/rod/hanchor.svg?branch=master)](https://travis-ci.org/rod/hanchor)
+[![Build Status](https://travis-ci.org/rod/hanchor.svg?branch=master)](https://travis-ci.org/rod/hanchor) [![David](https://img.shields.io/david/rod/hanchor.svg)]() [![David](https://img.shields.io/david/dev/rod/hanchor.svg)]()
 
 > Autogenerate links to header tags from header text
 
